@@ -3,29 +3,40 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Quicksand;
+    color: #fff;
+}
+.border {
+    background-color: #779be7;
+    padding: 30px;
 }
 
-.landing {}
+.everything {
+    padding: 30px;
+    background-color: #;
+}
 
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
-    background-color: transparent;
+    padding: 10px 10%;
+    background-color: #5d388a;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
 
-.logo {
+.name {
     font-size: 25px;
-    color: #ff499e;
+    color: #db5493;
     text-decoration: none;
     font-weight: 700;
+    
 }
+
+
 
 .navbar a {
     display: inline-block;
@@ -100,6 +111,32 @@
     animation: animateText 6s linear infinite;
 }
 
+
+.skills {
+    background-color: #49b6ff;
+    font-size: 32px;
+    padding: 40px;
+
+}
+.myskill {
+    font-size: 48px;
+    text-align: center;
+    padding: 50px;
+    
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    height: 340px;
+    
+}
+
 @keyframes animateText {
 
     0%,
@@ -164,6 +201,17 @@
     box-shadow: 0 0 10px #ff499e;
     background-color: #ff499e;
 }
+
+.space {
+    height: 100vh;
+    background-color: #49b6ff;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 
 @media screen and (max-width: 1400px) {
 
