@@ -5,6 +5,7 @@
     font-family: Quicksand;
     color: #fff;
 }
+
 .border {
     background-color: #779be7;
     padding: 30px;
@@ -12,7 +13,6 @@
 
 .everything {
     padding: 30px;
-    background-color: #;
 }
 
 .header {
@@ -20,20 +20,21 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 10%;
+    padding: 20px 10%;
     background-color: #5d388a;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+
 }
 
 .name {
     font-size: 25px;
-    color: #db5493;
     text-decoration: none;
     font-weight: 700;
-    
+    color: #fff;
+    text-shadow: 0 0 10px #ff499e;
 }
 
 
@@ -111,32 +112,6 @@
     animation: animateText 6s linear infinite;
 }
 
-
-.skills {
-    background-color: #49b6ff;
-    font-size: 32px;
-    padding: 40px;
-
-}
-.myskill {
-    font-size: 48px;
-    text-align: center;
-    padding: 50px;
-    
-}
-
-.logos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
-
-.logo {
-    height: 340px;
-    
-}
-
 @keyframes animateText {
 
     0%,
@@ -202,6 +177,43 @@
     background-color: #ff499e;
 }
 
+.skills {
+    font-size: 32px;
+    padding: 40px;
+
+}
+
+.myskill {
+    font-size: 58px;
+    letter-spacing: 6px;
+    font-weight: 800;
+    padding: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.logo {
+    max-height: 350px;
+    
+}
+
+.logo-box {
+    padding: 20px;
+}
+
 .space {
     height: 100vh;
     background-color: #49b6ff;
@@ -209,9 +221,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
-}
 
+}
 
 @media screen and (max-width: 1400px) {
 
@@ -241,10 +252,10 @@
     }
 
     .logo {
-        color: #fff;
-        text-shadow: 0 0 10px #ff499e;
+        max-height: 260px;
     }
 }
+
 
 @media screen and (max-width: 726px) {
     .navbar a {
@@ -264,6 +275,14 @@
         max-width: 250px;
         padding-top: 40px;
     }
+
+   .logo {
+    
+   }
+
+    .logo-box {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -272,11 +291,32 @@
     .home-image {
         width: 150px;
         height: 150px;
-        
+
     }
-    
+
     .home-image img {
         max-width: 100px;
         padding-top: 15px;
+    }
+
+    .navbar a {
+        background-color: #49b6ff;
+
+    }
+
+    .logo {
+        background-color: #a480cf;
+        max-height: 80px;
+
+    }
+
+    .logo-text {
+        font-size: 20px;
+
+    }
+
+    .myskill {
+        font-size: 40px;
+        padding: 0;
     }
 }
